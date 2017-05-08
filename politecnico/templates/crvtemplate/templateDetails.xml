@@ -32,6 +32,9 @@
 	
 	<positions><!-- define the positions for modules here -->
 		<position>debug</position>
+		<position>position-1</position>
+		<position>position-3</position>
+		<position>position-contact</position>
 	</positions>
 	
 </extension>

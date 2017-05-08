@@ -1,7 +1,6 @@
 <?php
 $v = '?v=' . date('YmdHis');
-?>
-<?php defined( '_JEXEC' ) or die; 
+defined( '_JEXEC' ) or die; 
 include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 ?><!doctype html>
 <html lang="<?php echo $this->language; ?>">
@@ -23,7 +22,6 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
         <script src="<?php echo $tpath; ?>/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
         <script src="<?php echo $tpath; ?>/js/jquery/responsiveslides.min.js" type="text/javascript"></script>
         <script src="<?php echo $tpath; ?>/js/sources/syshtl.js<?php echo $v; ?>" type="text/javascript"></script>
-        <title>Plantilla politecnico</title>
         <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 		 <jdoc:include type="head" />
     </head>
@@ -32,7 +30,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
             <div class="panel-heading">
                 <div class="container-fluid">
                     <div class="col-md-6">
-                        <a class="link" href="tel:0328369000"><i class="glyphicon glyphicon-phone-alt"></i> 8369000</a></a>
+                        <span id="tel2"></span>
                     </div>
                     <div class="col-md-6">
                         <a class="link" href="#"><i class="glyphicon glyphicon-envelope"></i> Correo institucional</a>
@@ -60,11 +58,11 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                                 <li class="active"><a href="#">INICIO</a></li>
                                 <li><a href="#">NOSOTROS</a></li>
                                 <li><a href="#">PROGRAMAS</a></li>
-                                <li><a href="#">PREINSCRIPCION</a></li>
+                                <li><a href="17-main-menu/10-pre-inscripcion">PREINSCRIPCION</a></li>
                             </ul>
-                            <form class="navbar-form navbar-right" role="search">
+                            <form class="navbar-form navbar-right" action="component/search/" role="search">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Buscar">
+                                    <input type="text" class="form-control" name="searchword" placeholder="Buscar">
                                 </div>
                             </form>
                         </div><!--/.nav-collapse -->
@@ -77,6 +75,8 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 		
             <script>
                 $(function () {
+					$('#searchForm').attr('class','col-md-4')
+					$('#name_article').html($('title').text());
                     $("#sliders").responsiveSlides({
                         maxwidth: 2880,
                         speed: 4000,
@@ -90,7 +90,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                 });
             </script>
             <!--<div class="container-fluid">-->
-            <div                            id="imagenes">
+            <div id="imagenes">
                 <ul id="sliders">
                     <li><img class="img-responsive" src="<?php echo $tpath; ?>/img/baner/1.jpg"/></li>
                     <li><img class="img-responsive" src="<?php echo $tpath; ?>/img/baner/2.jpg"/></li>
@@ -120,7 +120,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                         </a>
                     </li>
                     <li id="item3">
-                        <a href="#">
+                        <a href="15-banner-items/8-sistema-de-gestion-de-calidad">
                             <div class="item_div">
                                 <div class="img-circule">
                                     <img src="<?php echo $tpath; ?>/img/icons/sgc.png">
@@ -149,18 +149,10 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                         <div class="col-md-3">
                             <div class="cab">PQRS</div>
                             <div class="container-fluid">
-                                <img src="<?php echo $tpath; ?>/img/noticias/pqrs.png" class="img-responsive"/>
+                                <a href="#" data-toggle="modal" data-target="#modalpqrs"><img src="<?php echo $tpath; ?>/img/noticias/pqrs.png" class="img-responsive"/></a>
                             </div>
 							<div class="sidebar">
-                            
-                                <div class="cab">links de interes</div>
-                                <div class="container-fluid">
-                                    <a href="#">BECAS</a><br/>
-                                    <a href="#">REGLAMENTO</a><br/>
-                                    <a href="#">BOLETIN DE CALIDAD</a><br/>
-                                    <a href="#">SEDES SUROCCIDENTE COLOMBIANO</a><br/>
-                                    <a href="#">SEDES POPAY&#193;N</a><br/>
-                                </div>
+								<jdoc:include type="modules" name="position-3"/>
                                 <div class="cab">eventos</div>
                                 <div class="container-fluid">
                                     <img src="<?php echo $tpath; ?>/img/noticias/evento.png" class="img-responsive" alt="evento"/>
@@ -169,11 +161,10 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                         </div>
                         </div>
                         <div class="col-md-9">
-                            <div class="cab">Noticias</div>
+							<jdoc:include type="modules" name="position-1" style="none" />
+                            <div class="cab" id="name_article">Noticias</div>
                             <div class="notice">
-							  <jdoc:include type="modules" name="debug" />
-							  <jdoc:include type="modules" name="position-10" />
-							  <jdoc:include type="component" />
+							<jdoc:include type="component" />
 
                             </div>
 
@@ -197,12 +188,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                                     <li><a href="#">Noticia numero 5</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-3">
-                                <h3>CONTACTO</h3>
-                                Direccion: <a href="https://www.google.com/maps/place/Politecnico+Latinoamericano+Del+Norte/@2.4421009,-76.6069539,17z/data=!4m5!3m4!1s0x8e30030f8e9a9279:0x5e6fe39fea57bb33!8m2!3d2.4421009!4d-76.6047652" target="_blank">Calle con carrera Popay&#225;n Cauca Colombia</a><br/>
-                                Telefono: <a href="tel:0328369000">8369000</a><br/>
-                                Email: <a href="mailto:Email@email.com">Email@email.com</a>
-                            </div>
+                            <jdoc:include type="modules" name="position-contact"/>
                             <div class="col-md-3">
                                 <h3>REDES SOCIALES</h3>
                                 <a href="https://www.facebook.com/Politecnico-Latinoamericano-del-Norte-236525263194338" target="_blank"><img src="<?php echo $tpath; ?>/img/icons/fb.jpg" alt="Facebook"style="width: 40px;"/></a>
@@ -232,6 +218,70 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div id="pqrs">
+            <div class="modal fade" id="modalpqrs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">PQRS</h4>
+                        </div>
+                        <div class="modal-body">
+								<div class="row">
+									<form>
+									<div class="col-md-6">
+										<label>Nombre completo</label>
+										<input class="form form-control" name="" id="" required="required"/>
+									</div>
+									
+									<div class="col-md-6">
+										<label>Celular</label>
+										<input class="form form-control" name="" id="" required="required"/>
+									</div>
+									<div class="col-md-6">
+										<label>Telefono</label>
+										<input class="form form-control" name="" id="" required="required"/>
+									</div>
+									<div class="col-md-6">
+										<label>Email</label>
+										<input class="form form-control" name="" id="" required="required"/>
+									</div>
+									<div class="col-md-6">
+										<label>Seleccion tipo de cliente</label>
+										<select id="" name="" class="form form-control">
+											<option value="" selected="selected">Seleccione Tipo</option>
+											<option value="estudiante">Estudiante</option>
+											<option value="funcionario">Funcionario</option>
+											<option value="cliente externo">Otro Cliente Externo</option>
+										</select>
+									</div>
+									<div class="col-md-6">
+										<label>Seleccione PQRSF:</label>
+										<select id="" name="" class="form form-control">
+											<option value="" selected="selected">Seleccione Opción</option>
+											<option value="petición">Petición</option>
+											<option value="queja">Queja</option>
+											<option value="reclamo">Reclamo</option>
+											<option value="sugerencia">Sugerencia</option>
+											<option value="felicitación">Felicitación</option>
+										</select>
+									</div>
+									<div class="col-md-12">
+										<label>Comentarios</label>
+										<textarea class="form form-control" name="" id="" required="required"></textarea>
+									</div>
+									<captcha>
+									</form>
+								</div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary">Enviar PQRS</button>
                         </div>
                     </div>
                 </div>
