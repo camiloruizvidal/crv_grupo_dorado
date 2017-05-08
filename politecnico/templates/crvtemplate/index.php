@@ -1,4 +1,5 @@
 <?php
+$pageURL = JURI::base();
 $v = '?v=' . date('YmdHis');
 defined( '_JEXEC' ) or die; 
 include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
@@ -55,12 +56,12 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav" style="margin: auto;">
-                                <li class="active"><a href="#">INICIO</a></li>
+                                <li class="active"><a href="<?php echo $pageURL;?>">INICIO</a></li>
                                 <li><a href="#">NOSOTROS</a></li>
                                 <li><a href="#">PROGRAMAS</a></li>
                                 <li><a href="17-main-menu/10-pre-inscripcion">PREINSCRIPCION</a></li>
                             </ul>
-                            <form class="navbar-form navbar-right" action="component/search/" role="search">
+                            <form class="navbar-form navbar-right" action="<?php echo $pageURL;?>component/search/" role="search">
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="searchword" placeholder="Buscar">
                                 </div>
@@ -75,6 +76,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 		
             <script>
                 $(function () {
+					$('#nav_img_logo').html('<a href="<?php echo $pageURL;?>">'+$('#nav_img_logo').html()+'</a>');
 					$('#searchForm').attr('class','col-md-4')
 					$('#name_article').html($('title').text());
                     $("#sliders").responsiveSlides({
@@ -174,25 +176,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                 <div class="col-md-12" id="footer_div">
                     <footer class="footer">
                         <div class="container">
-                            <div class="col-md-3">
-                                <h3>SOBRE NOSOTROS</h3>
-                                <P>Indicamos informacion basica de  la empresa y demas informacion que sea relevante para el usuario</P>
-                            </div>
-                            <div class="col-md-3">
-                                <h3>ULTIMAS NOTICIAS</h3>
-                                <ul>
-                                    <li><a href="#">Noticia numero 1</a></li>
-                                    <li><a href="#">Noticia numero 2</a></li>
-                                    <li><a href="#">Noticia numero 3</a></li>
-                                    <li><a href="#">Noticia numero 4</a></li>
-                                    <li><a href="#">Noticia numero 5</a></li>
-                                </ul>
-                            </div>
                             <jdoc:include type="modules" name="position-contact"/>
-                            <div class="col-md-3">
-                                <h3>REDES SOCIALES</h3>
-                                <a href="https://www.facebook.com/Politecnico-Latinoamericano-del-Norte-236525263194338" target="_blank"><img src="<?php echo $tpath; ?>/img/icons/fb.jpg" alt="Facebook"style="width: 40px;"/></a>
-                            </div>
                             <div class="col-md-12">
                                 <div id="copy-rigth">
                                     <a href="http://solucionescrv.com" target="_blank">DISE&#209;O WEB POR <img src="<?php echo $tpath; ?>/img/icons/logo-crv.png" alt="logo crv"/> SOLUCIONES SOFTWARE</a>
@@ -227,7 +211,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
             <div class="modal fade" id="modalpqrs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header" style="background-color: #004B79;color: #c3c3c3;">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h4 class="modal-title" id="myModalLabel">PQRS</h4>
                         </div>

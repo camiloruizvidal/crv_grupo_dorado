@@ -1,17 +1,2 @@
-<?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.1.0" client="site" method="upgrade">
-    <name>Link de interés</name>
-    <author>Camilo Ruiz</author>
-    <version>1.0.0</version>
-    <description>Modulo para visualizar los links.</description>
-    <files>
-        <filename>mod_linkinteres.xml</filename>
-        <filename module="mod_linkinteres">mod_linkinteres.php</filename>
-        <filename>index.html</filename>
-        <filename>helper.php</filename>
-        <filename>tmpl/default.php</filename>
-        <filename>tmpl/index.html</filename>
-    </files>
-    <config>
-    </config>
-</extension>
+<?xml version="1.0" encoding="utf-8"?><extension type="module" version="3.1.0" client="site" method="upgrade">    <name>CRV | Link de interés</name>    <author>Camilo Ruiz</author>    <version>1.0.0</version>    <description>Modulo para visualizar los links. Creado por www.solucionescrv.com</description>
+   <files>        <filename>mod_linkinteres.xml</filename>        <filename module="mod_linkinteres">mod_linkinteres.php</filename>        <filename>index.html</filename>        <filename>helper.php</filename>        <filename>tmpl/default.php</filename>        <filename>tmpl/index.html</filename>    </files>    <config>    </config></extension>

@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.1.0" client="site" method="upgrade">
-    <name>Noticias recientes</name>
-    <author>Camilo Ruiz</author>
-    <version>1.0.0</version>
-    <description>Modulo de noticias recientes.</description>
-    <files>
-        <filename>mod_noticerecent.xml</filename>
-        <filename module="mod_noticerecent">mod_noticerecent.php</filename>
-        <filename>index.html</filename>
-        <filename>helper.php</filename>
-        <filename>tmpl/default.php</filename>
-        <filename>tmpl/index.html</filename>
-    </files>
-    <config>
-    </config>
-</extension>
+<?xml version="1.0" encoding="utf-8"?><extension type="module" version="3.1.0" client="site" method="upgrade">    <name>CRV | Noticias recientes</name>    <author>Camilo Ruiz</author>    <version>1.0.0</version>    <description>Modulo de noticias recientes. Creado por www.solucionescrv.com</description>    <files>        <filename>mod_noticerecent.xml</filename>        <filename module="mod_noticerecent">mod_noticerecent.php</filename>        <filename>index.html</filename>        <filename>helper.php</filename>        <filename>tmpl/default.php</filename>        <filename>tmpl/index.html</filename>    </files>    <config>		<config>			<fields name="params">				<fieldset name="basic">					<field						name="cant"						type="text"						default="5"						label="Numero de noticias que desea mostrar"						description="Numero de noticias que desea mostrar">					</field>				</fieldset>			</fields>		</config>	</config>	</extension>
