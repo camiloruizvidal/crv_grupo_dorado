@@ -58,8 +58,8 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                             <ul class="nav navbar-nav" style="margin: auto;">
                                 <li class="active"><a href="<?php echo $pageURL;?>">INICIO</a></li>
                                 <li><a href="#">NOSOTROS</a></li>
-                                <li><a href="#">PROGRAMAS</a></li>
-                                <li><a href="17-main-menu/10-pre-inscripcion">PREINSCRIPCION</a></li>
+                                <li><a href="<?php echo $pageURL;?>18-programas/16-programas">PROGRAMAS</a></li>
+                                <li><a href="<?php echo $pageURL;?>17-main-menu/10-pre-inscripcion">PREINSCRIPCION</a></li>
                             </ul>
                             <form class="navbar-form navbar-right" action="<?php echo $pageURL;?>component/search/" role="search">
                                 <div class="form-group">
