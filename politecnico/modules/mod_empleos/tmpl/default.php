@@ -39,8 +39,9 @@ if(count($para)>0)
 ?>
 <style>
 .find{
-	color:red;
-	background-color:yellow;
+	background-color: #FFFFCC;
+	font-weight: bold;
+	padding: 1px 0;
 }
 </style>
 <script>
