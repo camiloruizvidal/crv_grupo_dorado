@@ -57,7 +57,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav" style="margin: auto;">
                                 <li class="active"><a href="<?php echo $pageURL;?>">INICIO</a></li>
-                                <li><a href="#">NOSOTROS</a></li>
+                                <li><a href="<?php echo $pageURL;?>18-acercade/34-nosotros">NOSOTROS</a></li>
                                 <li><a href="<?php echo $pageURL;?>18-programas/16-programas">PROGRAMAS</a></li>
                                 <li><a href="<?php echo $pageURL;?>17-main-menu/10-pre-inscripcion">PREINSCRIPCION</a></li>
                             </ul>
@@ -102,7 +102,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
             <div id="items">
                 <ul id="item_menu">
                     <li id="item1">
-                        <a href="#">
+                        <a href="<?php echo $pageURL;?>">
                             <div class="item_div">
                                 <div class="img-circule">
                                     <img src="<?php echo $tpath; ?>/img/icons/user.png">
@@ -112,7 +112,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                         </a>
                     </li>
                     <li id="item2">
-                        <a href="15-banner-items/1-q10">
+                        <a href="<?php echo $pageURL;?>15-banner-items/1-q10">
                             <div class="item_div">
                                 <div class="img-circule">
                                     <img src="<?php echo $tpath; ?>/img/icons/q10.png">
@@ -122,7 +122,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                         </a>
                     </li>
                     <li id="item3">
-                        <a href="15-banner-items/8-sistema-de-gestion-de-calidad">
+                        <a href="<?php echo $pageURL;?>15-banner-items/8-sistema-de-gestion-de-calidad">
                             <div class="item_div">
                                 <div class="img-circule">
                                     <img src="<?php echo $tpath; ?>/img/icons/sgc.png">
@@ -132,7 +132,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                         </a>
                     </li>
                     <li id="item4">
-                        <a href="#">
+                        <a href="<?php echo $pageURL;?>23-egresados/35-egresados">
                             <div class="item_div">
                                 <div class="img-circule">
                                     <img src="<?php echo $tpath; ?>/img/icons/college-512.png">
