@@ -1,8 +1,9 @@
 <?php 
 // No direct access
 defined('_JEXEC') or die;
+$cant=10;
 $url_actual=$_SERVER['REDIRECT_URL'];
-$total_paginas=count($empleos)/10;
+$total_paginas=count($empleos)/$cant;
 $para=array();
 $search='';
 $f_inicio='';
@@ -11,22 +12,21 @@ $pag='';
 if(isset($_GET['search']))
 {
 	$search=$_GET['search'];
-	$para[]='search='.$search;
+	$para[]='search='.urlencode($search);
 }
 if(isset($_GET['f_inicio']))
 {
 	$f_inicio=$_GET['f_inicio'];
-	$para[]='f_inicio='.$f_inicio;
+	$para[]='f_inicio='.urlencode($f_inicio);
 }
 if(isset($_GET['f_fin']))
 {
 	$f_fin=$_GET['f_fin'];
-	$para[]='f_fin='.$f_fin;
+	$para[]='f_fin='.urlencode($f_fin);
 }
 if(isset($_GET['pag']))
 {
 	$pag=$_GET['pag'];
-	$para[]='pag='.$pag;
 }
 else
 {
@@ -34,10 +34,6 @@ else
 }
 if(count($para)>0)
 {
-	foreach($para as $key=>$temp)
-	{
-		$para[$key]=urlencode($temp);
-	}
 	$url_actual.='?'.implode('&',$para);
 }
 ?>
@@ -92,24 +88,28 @@ $(function()
 </div>
 
 <?php
-foreach($empleos as $temp)
+for($i=0;$i<$cant;$i++)
 {
-	//$temp['titulo']=str_replace($search,$temp['titulo'],'<span class="find">'.$search.'</span>');
-	$temp['titulo']=str_replace(strtoupper($search),'<i class="find">'.strtoupper($search).'</i>', strtoupper($temp['titulo']));
-	$temp['texto']=str_replace(strtoupper($search),'<i class="find">'.strtoupper($search).'</i>', strtoupper($temp['texto']));
-	echo'	<div class="row">
-			<div class="col-sm-12 col-md-12">
-				<div class="thumbnail">
-					<div class="caption">
-						<h3 align="center"><a style="color:#000" href="'.$temp['url'].'">'.$temp['titulo'].'</a></h3>
-						<p>'.$temp['texto'].'</p>
-						<i style="">Oferta publicada el '.$temp['fecha'].'</i>
-						<p><a class="btn btn-primary" href="'.$temp['url'].'"><i class="glyphicon glyphicon-briefcase"></i> Revisar</a> </p>
+	$idx=($pag*$cant)-$cant+$i;
+	if(isset($empleos[$idx]))
+	{
+		$temp=$empleos[$idx];
+		$temp['titulo']=str_replace(strtoupper($search),'<i class="find">'.strtoupper($search).'</i>', strtoupper($temp['titulo']));
+		$temp['texto']=str_replace(strtoupper($search),'<i class="find">'.strtoupper($search).'</i>', strtoupper($temp['texto']));
+		echo'	<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<div class="thumbnail">
+						<div class="caption">
+							<h3 align="center"><a style="color:#000" href="'.$temp['url'].'">'.$temp['titulo'].'</a></h3>
+							<p>'.$temp['texto'].'</p>
+							<i style="">Oferta publicada el '.$temp['fecha'].'</i>
+							<p><a class="btn btn-primary" href="'.$temp['url'].'"><i class="glyphicon glyphicon-briefcase"></i> Revisar</a> </p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	';
+		';
+	}
 }
 if(count($empleos)===0)
 {
