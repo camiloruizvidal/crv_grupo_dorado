@@ -1,8 +1,9 @@
 <?php
-$pageURL = JURI::base();
-$v = '?v=' . date('YmdHis');
+$ds=DIRECTORY_SEPARATOR;
+$v='?v='.date('YmdHis');
 defined( '_JEXEC' ) or die; 
-include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
+include_once JPATH_THEMES.$ds.$this->template.$ds.'logic.php';
+$pageURL = JURI::base();
 ?><!doctype html>
 <html lang="<?php echo $this->language; ?>">
 <head>
@@ -13,10 +14,10 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $tpath; ?>/images/apple-touch-icon-114x114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $tpath; ?>/images/apple-touch-icon-144x144-precomposed.png">        
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $tpath; ?>/css/bootstrap/bootstrap.min.css" />        
-        <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $tpath; ?>/css/bootstrap/bootstrap-theme.css" />        
-        <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $tpath; ?>/css/jquery/jquery-ui.css" />        
-        <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $tpath; ?>/css/jquery/jquery-ui.theme.css" />        
+        <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $tpath; ?>/css/bootstrap/bootstrap.min.css<?php echo $v; ?>" />        
+        <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $tpath; ?>/css/bootstrap/bootstrap-theme.css<?php echo $v; ?>" />        
+        <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $tpath; ?>/css/jquery/jquery-ui.css<?php echo $v; ?>" />        
+        <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $tpath; ?>/css/jquery/jquery-ui.theme.css<?php echo $v; ?>" />        
         <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $tpath; ?>/css/styles/style.css<?php echo $v; ?>" />        
         <script src="<?php echo $tpath; ?>/js/jquery/jquery.js" type="text/javascript"></script>
         <script src="<?php echo $tpath; ?>/js/jquery/jquery-ui.js" type="text/javascript"></script>
@@ -27,6 +28,46 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 		 <jdoc:include type="head" />
     </head>
 <body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')).' '.$active->alias.' '.$pageclass; ?>">
+		<style>
+		.moduletable .form-inline{
+			text-align:center;
+		}
+		.moduletable .form-inline li{
+			list-style:none;
+		}
+		.moduletable .form-inline button{
+			width:100%;
+		}
+		.moduletable .form-inline input[type="text"], .moduletable .form-inline input[type="password"]{
+			width:100%;
+			height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		}
+		.moduletable .form-inline{
+			    max-width: 350px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-top: 80px;
+		}
+		.input-prepend span{
+			display:none;
+		}
+		</style>
+
         <div class="panel panel-default" id="navbar_panel">
             <div class="panel-heading">
                 <div class="container-fluid">
@@ -271,6 +312,6 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                 </div>
             </div>
         </div>
-		
+
     </body>
 </html>
