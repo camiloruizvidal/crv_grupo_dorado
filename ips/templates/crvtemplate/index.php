@@ -16,21 +16,17 @@ $pageURL = JURI::base();
   <meta name="keywords" content="">
   <meta name="author" content="">
 
-  <!-- Bootstrap Styles -->
-  <link href="<? echo $tpath; ?>css/bootstrap.css" rel="stylesheet">
-  <!-- Awesome Icons -->
-  <link href="<? echo $tpath; ?>css/font-awesome.css" rel="stylesheet">
-  <!-- Carousel -->
-  <link href="<? echo $tpath; ?>css/font-awesome.css"css/owl-carousel.css" rel="stylesheet">
-  <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-  <!-- Styles -->
-  <link href="style.css?v=<?php echo $v;?>" rel="stylesheet">
-  <!-- Google Fonts -->
+  <link href="<?php echo $tpath; ?>/css/bootstrap.css" rel="stylesheet">
+  <link href="<?php echo $tpath; ?>/css/font-awesome.css" rel="stylesheet">
+  <link href="<?php echo $tpath; ?>/css/font-awesome.css" rel="stylesheet">
+  <link href="<?php echo $tpath; ?>/css/owl-carousel.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="<?php echo $tpath; ?>/rs-plugin/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="<?php echo $tpath; ?>/css/style.css?v=<?php echo $v;?>" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900' rel='stylesheet' type='text/css'>
-</head>
+
+  </head>
 <body>
 
 <div class="animationload">
@@ -756,12 +752,12 @@ $pageURL = JURI::base();
 	<div class="dmtop">Scroll to Top</div>
     
 	<!-- Main Scripts-->
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-datetimepicker.js"></script>
-	<script src="js/menu.js"></script>
-	<script src="js/retina-1.1.0.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="<?php echo $tpath; ?>/js/jquery.js"></script>
+	<script src="<?php echo $tpath; ?>/js/bootstrap.min.js"></script>
+    <script src="<?php echo $tpath; ?>/js/bootstrap-datetimepicker.js"></script>
+	<script src="<?php echo $tpath; ?>/js/menu.js"></script>
+	<script src="<?php echo $tpath; ?>/js/retina-1.1.0.js"></script>
+	<script src="<?php echo $tpath; ?>/js/custom.js"></script>
 
 	<!-- CALENDAR WIDGET -->
 	<script type="text/javascript">
@@ -778,10 +774,8 @@ $pageURL = JURI::base();
 			});
 		})(jQuery);
 	</script>
-
-	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="<?php echo $tpath; ?>/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="<?php echo $tpath; ?>/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 	<script type="text/javascript">
 		(function($) {
 		  "use strict";
@@ -801,7 +795,7 @@ $pageURL = JURI::base();
 	</script>
     
 	<!-- CAROUSEL WIDGET -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="<?php echo $tpath; ?>/js/owl.carousel.min.js"></script>
 	<script>
 		(function($) {
 		  "use strict";
