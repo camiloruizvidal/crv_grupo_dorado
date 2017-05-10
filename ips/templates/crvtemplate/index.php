@@ -323,6 +323,7 @@ $pageURL = JURI::base();
 	<div class="grey-wrapper">
     	<div class="container">
         	<div class="general_row">
+			<jdoc:include type="modules" name="carrousel" style="none" />
             	<!-- end row -->
             </div><!-- end general row -->
         </div><!-- end container -->
