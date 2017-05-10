@@ -1,0 +1,7 @@
+<?php
+class ModContacto
+{
+    public static function getContacto(&$params)
+	{		$notice=array();		$con = new JConfig();		$cant=$params->get('noticias');		$db = &JFactory::getDBO();		$sql = "SELECT 			  concat(`#__categories`.`id`,'-',`#__categories`.`alias`, '/', `#__content`.`id`,'-',`#__content`.`alias`) AS `url`,			  `#__content`.`title`			FROM		  `#__content`		  INNER JOIN `#__categories` ON (`#__content`.`catid` = `#__categories`.`id`)		  WHERE		  `#__content`.`catid` = 8		ORDER BY		`#__content`.`created` DESC		LIMIT {$cant}";		$db->setQuery($sql);		$categorias = $db->loadObjectList();		$data=$db->loadObjectList();		foreach($data as $key=>$temp)		{			$temp2=array();			$temp2['url']=$temp->url;			$temp2['title']=$temp->title;			$notice[]=$temp2;		}				$app 		=	JFactory::getApplication();		$appParames	=	$app->getParams();		$data=array();		$data['gmaps']		=	$params->get('gmaps_contacto');		$data['direccion']	=	$params->get('direccion_contacto');		$data['tel1']		=	$params->get('telefono1_contacto');		$data['tel2']		=	$params->get('telefono2_contacto');		$data['email']		=	$params->get('email_contacto');		$data['nosotros']	=	$params->get('sobre_nosotros');		$data['noticias']	=	$notice;		$data['facebook']=$params->get('facebook');		$data['instagram']=$params->get('instagram');		$data['youtube']=$params->get('youtube');		$data['twitter']=$params->get('twitter');		return $data;
+	}
+}

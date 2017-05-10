@@ -32,6 +32,7 @@
 	
 	<positions><!-- define the positions for modules here -->
 		<position>debug</position>
+		<position>footer</position>
 	</positions>
 	
 </extension>

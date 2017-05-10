@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	<name>CRV | Datos de contacto</name>
+	<author>Camilo Ruiz</author>
+	<version>1.0.0</version>
+	<description>Modulo para visualizar los datos del pie de página. Creado por www.solucionescrv.com</description>
+	<files>
+		<filename>mod_contacto.xml</filename>
+		<filename module="mod_contacto">mod_contacto.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+    </files>
+	<config>		<config>			<fields name="params">				<fieldset name="basic">					<field						name="direccion_contacto"						type="textarea"						default=""						label="Direccion fisica"						description="Direccion o ubicacion">					</field>					<field						name="gmaps_contacto"						type="textarea"						default=""						label="coordenadas de google"						description="Direccion o ubicacion de google maps">					</field>					<field						name="telefono1_contacto"						type="text"						default=""						label="Telefono principal"						description="El primer telefono">					</field>					<field						name="telefono2_contacto"						type="text"						default=""						label="Telefono secundario"						description="El segundo telefono">					</field>					<field						name="youtube"						type="text"						default=""						label="Canal de YouTube"						description="Correo electronico de la institución">					</field>					<field						name="instagram"						type="text"						default=""						label="Instagram"						description="Correo electronico de la institución">					</field>					<field						name="facebook"						type="text"						default=""						label="Facebook"						description="Correo electronico de la institución">					</field>					<field						name="twitter"						type="text"						default=""						label="Twitter"						description="Correo electronico de la institución">					</field>					<field						name="noticias"						type="text"						default="5"						label="Numero de noticias a mostrar"						description="Correo electronico de la institución">					</field>					<field						name="email_contacto"						type="text"						default=""						label="Email"						description="Correo electronico de la institución">					</field>					<field						name="sobre_nosotros"						type="textarea"						default=""						label="sobre nosotros"						description="Correo electronico de la institución">					</field>				</fieldset>			</fields>		</config>
+	</config>
+</extension>

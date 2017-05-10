@@ -57,7 +57,7 @@ $pageURL = JURI::base();
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index-2.html" class="navbar-brand"><img src="images/logo.png" alt="asusalud"></a>
+                    <a href="index-2.html" class="navbar-brand"><img src="<?php echo $tpath; ?>/images/logo.png" alt="asusalud"></a>
         		</div><!-- end navbar-header -->
                 
 				<div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right">
@@ -81,7 +81,7 @@ $pageURL = JURI::base();
             <div class="tp-banner" >
                 <ul>
 					<li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
-                        <img src="demos/sliderbg_01.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <img src="<?php echo $tpath; ?>/demos/sliderbg_01.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                         <div class="tp-caption big_title_slider customin customout start"
                             data-x="center" data-hoffset="210"
                             data-y="170"
@@ -138,11 +138,11 @@ $pageURL = JURI::base();
                             data-easing="Power4.easeOut"
                             data-endspeed="500"
                             data-endeasing="Power4.easeIn"
-                            style="z-index: 3"><img src="demos/slider_man_01.png" alt="">
+                            style="z-index: 3"><img src="<?php echo $tpath; ?>/demos/slider_man_01.png" alt="">
                         </div>
                     </li>
 					<li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
-                        <img src="demos/sliderbg_02.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <img src="<?php echo $tpath; ?>/demos/sliderbg_02.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                         <div class="tp-caption big_title_slider customin customout start"
                             data-x="center" data-hoffset="240"
                             data-y="170"
@@ -163,7 +163,7 @@ $pageURL = JURI::base();
                             data-speed="1300"
                             data-start="800"
                             data-easing="Back.easeInOut"
-                            data-endspeed="300"><img src="images/slider_icon.png" alt=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat, neque ut sod.
+                            data-endspeed="300"><img src="<?php echo $tpath; ?>/images/slider_icon.png" alt=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat, neque ut sod.
                         </div>
 
                         <div class="tp-caption small_title customin customout start"
@@ -174,7 +174,7 @@ $pageURL = JURI::base();
                             data-speed="1300"
                             data-start="900"
                             data-easing="Back.easeInOut"
-                            data-endspeed="300"><img src="images/slider_icon.png" alt=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat, neque ut sod.
+                            data-endspeed="300"><img src="<?php echo $tpath; ?>/images/slider_icon.png" alt=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat, neque ut sod.
                         </div>
 
                         <div class="tp-caption small_title customin customout start"
@@ -185,7 +185,7 @@ $pageURL = JURI::base();
                             data-speed="1300"
                             data-start="1000"
                             data-easing="Back.easeInOut"
-                            data-endspeed="300"><img src="images/slider_icon.png" alt=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat, neque ut sod
+                            data-endspeed="300"><img src="<?php echo $tpath; ?>/images/slider_icon.png" alt=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat, neque ut sod
                         </div>
                           
                         <div class="tp-caption small_title customin customout start"
@@ -211,7 +211,7 @@ $pageURL = JURI::base();
                         </div>
                     </li>
 					<li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
-                        <img src="demos/sliderbg_01.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <img src="<?php echo $tpath; ?>/demos/sliderbg_01.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                         <div class="tp-caption big_title_slider customin customout start"
                             data-x="center" data-hoffset="200"
                             data-y="170"
@@ -269,7 +269,7 @@ $pageURL = JURI::base();
                             data-easing="Power4.easeOut"
                             data-endspeed="500"
                             data-endeasing="Power4.easeIn"
-                            style="z-index: 3"><img src="demos/slider_woman_01.png" alt="">
+                            style="z-index: 3"><img src="<?php echo $tpath; ?>/demos/slider_woman_01.png" alt="">
                         </div>
                     </li>
                  </ul>
@@ -287,7 +287,7 @@ $pageURL = JURI::base();
                 <div class="custom-services">
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 first">
 						<div class="service_box">
-                        	<img src="images/ico_01.png" alt="" class="img-responsive">
+                        	<img src="<?php echo $tpath; ?>/images/ico_01.png" alt="" class="img-responsive">
                         	<div class="title">
                             	<h3>Aplicacion de medicamentos</h3>
                             </div><!-- end title -->
@@ -297,7 +297,7 @@ $pageURL = JURI::base();
                     </div><!-- end col-sm-4 -->
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<div class="service_box">
-                        	<img src="images/ico_02.png" alt="" class="img-responsive">
+                        	<img src="<?php echo $tpath; ?>/images/ico_02.png" alt="" class="img-responsive">
                         	<div class="title">
                             	<h3>Control de pacientes</h3>
                             </div><!-- end title -->
@@ -307,7 +307,7 @@ $pageURL = JURI::base();
                     </div><!-- end col-sm-4 -->
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 last">
 						<div class="service_box">
-                        	<img src="images/ico_03.png" alt="" class="img-responsive">
+                        	<img src="<?php echo $tpath; ?>/images/ico_03.png" alt="" class="img-responsive">
                         	<div class="title">
                             	<h3>Servicio de ambulancia</h3>
                             </div><!-- end title -->
@@ -323,326 +323,7 @@ $pageURL = JURI::base();
 	<div class="grey-wrapper">
     	<div class="container">
         	<div class="general_row">
-            	<div class="big-title clearfix">
-                	<h3>Oportunidad laboral <i class="glyphicon glyphicon-plus" style="color:#5cb85c"></i></h3>
-                </div>
-            	<div id="owl-blog" class="owl-carousel">
-						<?php
-                        $i=1;
-						$data=array(
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						array(
-						'img'	=>'demos/blog_01.png',
-						'url'	=>'#',
-						'title'	=>'Empleo '.($i++),
-						'date'	=>'1 de enero de 2017',
-						'views'	=>rand(10,100),
-						'text'	=>'<p>Class aptent torquent per conubia nostra, per inceptos himenaeos. Aenean vel faucibus nunc, et venenatis magna. In hac habitasse platea dictumst. </p>',
-						
-						),
-						
-						);
-						foreach($data as $temp)
-						{
-							echo '
-						<div class="item">
-							
-							<div class="blog-carousel">
-                            <div class="entry">
-                                <img src="'.$temp['img'].'" alt="" class="img-responsive">
-                                <div class="magnifier">
-                                    <div class="buttons">
-                                        <a class="st" rel="bookmark" href="'.$temp['url'].'"><i class="fa fa-link"></i></a>
-                                        <a class="st" rel="bookmark" href="#"><i class="fa fa-eye"></i></a>
-                                    </div><!-- end buttons -->
-                                </div><!-- end magnifier -->
-                            </div><!-- end entry -->
-                            <div class="blog-carousel-header">
-                                <h3><a title="" href="'.$temp['url'].'">'.$temp['title'].'</a></h3>
-                                <div class="blog-carousel-meta">
-                                    <span><i class="fa fa-calendar"></i> '.$temp['date'].'</span>
-                                    <span><i class="fa fa-eye"></i> <a href="#">'.$temp['views'].'</a></span>
-                                </div><!-- end blog-carousel-meta -->
-                            </div><!-- end blog-carousel-header -->
-                            <div class="blog-carousel-desc">
-                                '.$temp['text'].'
-                            </div><!-- end blog-carousel-desc -->
-                            <a href="'.$temp['url'].'" class="btn btn-dark btn-sm">Ver mas</a>
-                        </div>
-						</div>
-						';
-						}
-						?>
-                </div><!-- end row -->
+            	<!-- end row -->
             </div><!-- end general row -->
         </div><!-- end container -->
     </div><!-- end grey-wrapper -->
@@ -717,33 +398,10 @@ $pageURL = JURI::base();
     
     <footer class="footer">
                         <div class="container">
-                            <div class="col-md-3">
-                                <h3>SOBRE NOSOTROS</h3>
-                                <p>Indicamos informacion basica de  la empresa y demas informacion que sea relevante para el usuario</p>
-                            </div>
-                            <div class="col-md-3">
-                                <h3>ULTIMAS NOTICIAS</h3>
-                                <ul>
-                                    <li><a href="#">Noticia numero 1</a></li>
-                                    <li><a href="#">Noticia numero 2</a></li>
-                                    <li><a href="#">Noticia numero 3</a></li>
-                                    <li><a href="#">Noticia numero 4</a></li>
-                                    <li><a href="#">Noticia numero 5</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3">
-                                <h3>CONTACTO</h3>
-                                Direccion: <a href="https://www.google.com/maps/place/Politecnico+Latinoamericano+Del+Norte/@2.4421009,-76.6069539,17z/data=!4m5!3m4!1s0x8e30030f8e9a9279:0x5e6fe39fea57bb33!8m2!3d2.4421009!4d-76.6047652" target="_blank">Calle con carrera Popayán Cauca Colombia</a><br>
-                                Telefono: <a href="tel:0328369000">8369000</a><br>
-                                Email: <a href="mailto:Email@email.com">Email@email.com</a>
-                            </div>
-                            <div class="col-md-3">
-                                <h3>REDES SOCIALES</h3>
-                                <a href="https://www.facebook.com/Politecnico-Latinoamericano-del-Norte-236525263194338" target="_blank"><img src="images/fb.jpg" alt="Facebook" style="width: 40px;"></a>
-                            </div>
+                            <jdoc:include type="modules" name="footer" style="none" />
                             <div class="col-md-12">
                                 <div id="copy-rigth">
-                                    <a href="http://solucionescrv.com" target="_blank">DISEÑO WEB POR <img src="images/logo-crv.png" alt="logo crv"> SOLUCIONES SOFTWARE</a>
+                                    <a href="http://solucionescrv.com" target="_blank">DISEÑO WEB POR <img src="<?php echo $tpath; ?>/images/logo-crv.png" alt="logo crv"> SOLUCIONES SOFTWARE</a>
                                 </div>
                             </div>
                         </div>
