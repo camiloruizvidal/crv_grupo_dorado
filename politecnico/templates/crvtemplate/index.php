@@ -96,13 +96,18 @@ $pageURL = JURI::base();
                             </button>
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav" style="margin: auto;">
+						<jdoc:include type="modules" name="position-2" style="none" />
+                            <!--<ul class="nav navbar-nav" style="margin: auto;">
                                 <li class="active"><a href="<?php echo $pageURL;?>">INICIO</a></li>
                                 <li><a href="<?php echo $pageURL;?>18-acercade/34-nosotros">NOSOTROS</a></li>
                                 <li><a href="<?php echo $pageURL;?>18-programas/16-programas">PROGRAMAS</a></li>
                                 <li><a href="<?php echo $pageURL;?>17-main-menu/10-pre-inscripcion">PREINSCRIPCION</a></li>
-                            </ul>
-                            <form class="navbar-form navbar-right" action="<?php echo $pageURL;?>component/search/" role="search">
+                            </ul>-->
+                            
+							
+							
+							
+							<form class="navbar-form navbar-right" action="<?php echo $pageURL;?>component/search/" role="search">
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="searchword" placeholder="Buscar">
                                 </div>
@@ -141,7 +146,8 @@ $pageURL = JURI::base();
                 </ul>
             </div>
             <div id="items">
-                <ul id="item_menu">
+				<jdoc:include type="modules" name="position-items" style="none" />
+                <!--<ul id="item_menu">
                     <li id="item1">
                         <a href="<?php echo $pageURL;?>">
                             <div class="item_div">
@@ -182,7 +188,7 @@ $pageURL = JURI::base();
                             </div>
                         </a>
                     </li>
-                </ul>
+                </ul>-->
             </div>
             
 			<div id="content">

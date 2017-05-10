@@ -118,7 +118,7 @@ abstract class JHtmlBehavior
 		// Attach caption to document
 		JFactory::getDocument()->addScriptDeclaration(
 			"jQuery(window).on('load',  function() {
-				//new JCaption('" . $selector . "');
+				new JCaption('" . $selector . "');
 			});"
 		);
 

@@ -8,6 +8,11 @@ defined('_JEXEC') or die;
 <?php
 foreach($carrousel as $temp)
 {
+	$text=trim(strip_tags($temp['text']));
+	if(strlen($text)>350)
+	{
+		$text=substr($text,0,350).'...';
+	}
 	echo '
 <div class="item">
 	<div class="blog-carousel">
@@ -27,7 +32,7 @@ foreach($carrousel as $temp)
 			</div><!-- end blog-carousel-meta -->
 		</div><!-- end blog-carousel-header -->
 		<div class="blog-carousel-desc">
-			'.$temp['text'].'
+			'.$text.'
 		</div><!-- end blog-carousel-desc -->
 			<a href="'.$temp['url'].'" class="btn btn-dark btn-sm">Ver mas</a>
 		</div>

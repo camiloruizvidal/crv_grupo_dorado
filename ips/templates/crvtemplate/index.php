@@ -307,15 +307,15 @@ $pageURL = JURI::base();
                 </div>
 			<div class="col-md-4">
 			<h3>Mes anterior</h3>
-				<iframe src="https://fullcalendar.io/js/fullcalendar-3.4.0/demos/agenda-views.html" style="width:100%; height :800px;"></iframe>
+				<iframe src="https://fullcalendar.io/js/fullcalendar-3.4.0/demos/agenda-views.html" style="width:100%; height :400px;"></iframe>
 			</div>
 			<div class="col-md-4">
 			<h3>Mes actual</h3>
-				<iframe src="https://fullcalendar.io/js/fullcalendar-3.4.0/demos/agenda-views.html" style="width:100%; height :800px;"></iframe>
+				<iframe src="https://fullcalendar.io/js/fullcalendar-3.4.0/demos/agenda-views.html" style="width:100%; height :400px;"></iframe>
 			</div>
 			<div class="col-md-4">
 			<h3>Mes siguiente</h3>
-				<iframe src="https://fullcalendar.io/js/fullcalendar-3.4.0/demos/agenda-views.html" style="width:100%; height :800px;"></iframe>
+				<iframe src="https://fullcalendar.io/js/fullcalendar-3.4.0/demos/agenda-views.html" style="width:100%; height :400px;"></iframe>
 			</div>
 		</div><!-- end container -->
     </div><!-- end white-wrapper -->
@@ -445,6 +445,4 @@ $pageURL = JURI::base();
 	</script>
     
 </body>
-
-<!-- Mirrored from jollythemes.com/html/asusalud/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Mar 2017 18:50:59 GMT -->
 </html>
