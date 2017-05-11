@@ -111,8 +111,9 @@ $pageURL = JURI::base();
         <div class="container-fluid" id="content-ini">
 		
             <script>
-                $(function () {
-					$('#nav_img_logo').html('<a href="<?php echo $pageURL;?>">'+$('#nav_img_logo').html()+'</a>');
+				$(function()
+				{
+					$('#nav_img_logo').html('<a href="<?php echo $pageURL;?>inicio">'+$('#nav_img_logo').html()+'</a>');
 					$('#searchForm').attr('class','col-md-4')
 					$('#name_article').html($('title').text());
                     $("#sliders").responsiveSlides({
@@ -125,7 +126,7 @@ $pageURL = JURI::base();
                         namespace: "large-btns",
                         pauseControls: true,
                     });
-                });
+				});
             </script>
             <!--<div class="container-fluid">-->
             <div id="imagenes">

@@ -1,3 +1,16 @@
+jQuery(document).ready(function(){
+        jQuery('.parent').addClass('dropdown');
+        jQuery('.parent > a').addClass('dropdown-toggle');
+        jQuery('.parent > a').attr('data-toggle', 'dropdown');
+        jQuery('.nav > .parent > a').attr('href','#');
+        jQuery('.parent > a').append('<span class="caret"></span>');
+        jQuery('.parent > ul').addClass('dropdown-menu');
+        jQuery('.nav-child .parent').removeClass('dropdown');
+        jQuery('.nav-child .parent').addClass('dropdown-submenu');
+        jQuery('.dropdown-submenu > a').removeAttr('class');
+        jQuery('.dropdown-submenu > a').removeAttr('data-toggle', 'dropdown');
+        jQuery('.dropdown-submenu > a > span').remove();
+    });
 function Renderhtml(ventana_ancho)
 {
     var html = '';
