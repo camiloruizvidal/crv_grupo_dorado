@@ -147,48 +147,6 @@ $pageURL = JURI::base();
             </div>
             <div id="items">
 				<jdoc:include type="modules" name="position-items" style="none" />
-                <!--<ul id="item_menu">
-                    <li id="item1">
-                        <a href="<?php echo $pageURL;?>">
-                            <div class="item_div">
-                                <div class="img-circule">
-                                    <img src="<?php echo $tpath; ?>/img/icons/user.png">
-                                </div>
-                                <span>ESTUDIANTES</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li id="item2">
-                        <a href="<?php echo $pageURL;?>15-banner-items/1-q10">
-                            <div class="item_div">
-                                <div class="img-circule">
-                                    <img src="<?php echo $tpath; ?>/img/icons/q10.png">
-                                </div>
-                                <span>Q10</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li id="item3">
-                        <a href="<?php echo $pageURL;?>15-banner-items/8-sistema-de-gestion-de-calidad">
-                            <div class="item_div">
-                                <div class="img-circule">
-                                    <img src="<?php echo $tpath; ?>/img/icons/sgc.png">
-                                </div>
-                                <span>SGC</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li id="item4">
-                        <a href="<?php echo $pageURL;?>23-egresados/35-egresados">
-                            <div class="item_div">
-                                <div class="img-circule">
-                                    <img src="<?php echo $tpath; ?>/img/icons/college-512.png">
-                                </div>
-                                <span>EGRESADOS</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>-->
             </div>
             
 			<div id="content">
@@ -201,20 +159,24 @@ $pageURL = JURI::base();
                                 <a href="#" data-toggle="modal" data-target="#modalpqrs"><img src="<?php echo $tpath; ?>/img/noticias/pqrs.png" class="img-responsive"/></a>
                             </div>
 							<div class="sidebar">
+								<div class="cab">links de interes</div>
+                                <div class="container-fluid">
 								<jdoc:include type="modules" name="position-3"/>
+								</div>
                                 <div class="cab">eventos</div>
                                 <div class="container-fluid">
                                     <img src="<?php echo $tpath; ?>/img/noticias/evento.png" class="img-responsive" alt="evento"/>
 
                                 </div>
-                        </div>
+							</div>
                         </div>
                         <div class="col-md-9">
 							<jdoc:include type="modules" name="position-1" style="none" />
                             <div class="cab" id="name_article">Noticias</div>
                             <div class="notice">
 							<jdoc:include type="component" />
-
+							<jdoc:include type="modules" name="noticias" style="none" />
+							<jdoc:include type="modules" name="egresados"/>
                             </div>
 
                         </div>

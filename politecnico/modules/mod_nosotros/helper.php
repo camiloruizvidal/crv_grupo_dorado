@@ -2,7 +2,7 @@
 class ModNosotros
 {
     public static function getNosotros()
-	{		$ds=DIRECTORY_SEPARATOR;		$html= array();		$con = new JConfig();		$db = &JFactory::getDBO();		$sql = "SELECT 			  concat(`#__categories`.`id`, '-', `#__categories`.`alias`) AS `url_cat`,			  concat(`#__content`.`id`, '-', `#__content`.`alias`) AS `url_art`,			  concat(`#__categories`.`id`,'-',`#__categories`.`alias`, '/', `#__content`.`id`,'-',`#__content`.`alias`) AS `url`,			  `#__content`.`id`,			  `#__content`.`title`,			  `#__content`.`alias`,			  `#__content`.`introtext`,			  `#__content`.`images`			FROM
+	{		$ds=DIRECTORY_SEPARATOR;		$html= array();		$con = new JConfig();		$db = &JFactory::getDBO();		$sql = "SELECT 			  concat(`#__categories`.`id`, '-', `#__categories`.`alias`) AS `url_cat`,			  concat(`#__content`.`id`, '-', `#__content`.`alias`) AS `url_art`,			  concat(`#__categories`.`alias`, '/', `#__content`.`id`,'-',`#__content`.`alias`) AS `url`,			  `#__content`.`id`,			  `#__content`.`title`,			  `#__content`.`alias`,			  `#__content`.`introtext`,			  `#__content`.`images`			FROM
 		  `#__content`
 		  INNER JOIN `#__categories` ON (`#__content`.`catid` = `#__categories`.`id`)		  WHERE		  `#__content`.`catid` = 22		  AND		  `#__content`.`id` != 34
 		ORDER BY

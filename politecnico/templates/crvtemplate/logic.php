@@ -25,7 +25,7 @@ unset($doc->_scripts[JURI::root(true) . '/media/jui/js/jquery-migrate.min.js']);
 $this->setGenerator(null);
 
 // template js
-//$doc->addScript($tpath.'/js/jquery.min.js');
+$doc->addScript($tpath.'/js/jquery.min.js');
 
 // template css
 $doc->addStyleSheet($tpath.'/css/template.css.php');

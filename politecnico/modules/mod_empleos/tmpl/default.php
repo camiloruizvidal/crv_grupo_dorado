@@ -38,6 +38,10 @@ if(count($para)>0)
 }
 ?>
 <style>
+.thumbnail:hover{
+	    background: #e9f5fb;
+    cursor: pointer;
+}
 .find{
 	background-color: #FFFFCC;
 	font-weight: bold;
@@ -54,10 +58,23 @@ $(function()
 });
 </script>
 <div class="row">
+<div class="panel panel-success">
+
+<div class="panel-heading">
+Busqueda
+</div>
+<div class="panel-body">
 	<form action="<?php echo $url_actual;?>" method="get">
 		<div class="col-md-6">
 			<label>Buscar</label>
-			<input value="<?php echo $search;?>" placeholder="Ingrese un criterio de busqueda" name="search" class="form form-control">
+			<div class="input-group">
+				<span class="input-group-btn">
+					<button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-search"></i></button>
+				</span>
+				<input value="<?php echo $search;?>" placeholder="Ingrese un criterio de busqueda" name="search" class="form form-control">
+				
+			</div>
+			
 		</div>
 		<div class="col-md-3">
 			<label>Fecha de inicio</label>
@@ -77,16 +94,18 @@ $(function()
 			<input  value="<?php echo $f_fin;?>" name="f_fin" class="fecha form form-control">
 			</div>
 		</div>
-		<div class="col-md-3">
-		<button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-search"></i></button>
-		</div>
+		
 	</form>
 </div>
+</div>
+</div>
 <div class="row">
-<div class="col-md-12">
-<h3>Empleos</h3>
+<div class="panel panel-success">
+
+<div class="panel-heading">
+Empleos
 </div>
-</div>
+<div class="panel-body">
 
 <?php
 for($i=0;$i<$cant;$i++)
@@ -101,9 +120,9 @@ for($i=0;$i<$cant;$i++)
 				<div class="col-sm-12 col-md-12">
 					<div class="thumbnail">
 						<div class="caption">
-							<h3 align="center"><a style="color:#000" href="'.$temp['url'].'">'.$temp['titulo'].'</a></h3>
+							<h3><a style="color:#1e82c4" href="'.$temp['url'].'">'.$temp['titulo'].'</a></h3>
 							<p>'.$temp['texto'].'</p>
-							<i style="">Oferta publicada el '.$temp['fecha'].'</i>
+							<i style="color:#7f7f7f;">'.$temp['fecha'].'</i>
 							<p><a class="btn btn-primary" href="'.$temp['url'].'"><i class="glyphicon glyphicon-briefcase"></i> Revisar</a> </p>
 						</div>
 					</div>
@@ -116,6 +135,11 @@ if(count($empleos)===0)
 {
 	echo '<center><div class="alert alert-danger" role="alert">NO SE HAN ENCONTRADO RESULTADOS</div></center>';
 }?>
+
+</div>
+<div class="panel-footer">
+<div class="container-alt">
+
 <nav aria-label="Page navigation">
   <ul class="pagination">
 	<?php
@@ -132,3 +156,5 @@ if(count($empleos)===0)
 	?>
   </ul>
 </nav>
+</div>
+</div>
