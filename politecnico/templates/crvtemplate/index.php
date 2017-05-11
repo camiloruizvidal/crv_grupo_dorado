@@ -97,16 +97,6 @@ $pageURL = JURI::base();
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
 						<jdoc:include type="modules" name="position-2" style="none" />
-                            <!--<ul class="nav navbar-nav" style="margin: auto;">
-                                <li class="active"><a href="<?php echo $pageURL;?>">INICIO</a></li>
-                                <li><a href="<?php echo $pageURL;?>18-acercade/34-nosotros">NOSOTROS</a></li>
-                                <li><a href="<?php echo $pageURL;?>18-programas/16-programas">PROGRAMAS</a></li>
-                                <li><a href="<?php echo $pageURL;?>17-main-menu/10-pre-inscripcion">PREINSCRIPCION</a></li>
-                            </ul>-->
-                            
-							
-							
-							
 							<form class="navbar-form navbar-right" action="<?php echo $pageURL;?>component/search/" role="search">
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="searchword" placeholder="Buscar">
