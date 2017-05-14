@@ -142,8 +142,6 @@ $pageURL = JURI::base();
             
 			<div id="content">
                 <div class="col-md-12">
-
-                    <div class="container-fluid">
                         <div class="col-md-3">
                             <div class="cab">PQRS</div>
                             <div class="container-fluid">
@@ -166,12 +164,12 @@ $pageURL = JURI::base();
                             <div class="cab" id="name_article">Noticias</div>
                             <div class="notice">
 							<jdoc:include type="component" />
-							<jdoc:include type="modules" name="noticias" style="none" />
+							<jdoc:include type="modules" name="debug" />
+							<jdoc:include type="modules" name="noticias" />
 							<jdoc:include type="modules" name="egresados"/>
                             </div>
 
                         </div>
-                    </div>
                 </div>
                 <div class="col-md-12" id="footer_div">
                     <footer class="footer">
